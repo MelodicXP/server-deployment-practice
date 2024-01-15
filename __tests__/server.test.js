@@ -28,6 +28,7 @@ describe('API Server', () => {
     const response = await mockRequest.get('/bad');
     console.log(response);
     expect(response.status).toEqual(500);
+    // body.route data from 500.js
     expect(response.body.route).toEqual('/bad');
   });
 
