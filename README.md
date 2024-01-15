@@ -34,11 +34,8 @@ None required for this lab.
 
 #### Tests
 
-<!-- fill in as see fit -->
-
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc
+- How do you run tests? using jest and supertest
+- Any tests of note?  testing for incorrect routes, and not found.
 
 #### UML
 
