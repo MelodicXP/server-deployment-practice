@@ -12,6 +12,9 @@ const notFound = require('./handlers/404.js');
 // Require 500 error handler middleware (creaed in handler folder)
 const errorHandler = require('./handlers/500.js');
 
+// Assign PORT variable
+const PORT = process.env.PORT || 3001;
+
 // Create a single instance of express named app
 const app = express();
 
@@ -41,7 +44,7 @@ app.use(errorHandler);
 
 // Use app to listen on a port and console log message its working properly (test by running nodemon)
 const startServer = () => {
-  app.listen(3001, () => console.log('server running'));
+  app.listen(PORT, () => console.log('server running'));
 };
 
 // startServer();
