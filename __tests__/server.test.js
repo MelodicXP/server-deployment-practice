@@ -17,4 +17,19 @@ describe('API Server', () => {
     // below text is from server.js'/' route that points to logger.js
     expect(response.text).toEqual('this is a log!');
   });
+
+  test('handles invalid requests', async () => {
+    const response = await mockRequest.get('/foo');
+
+    expect(response.status).toEqual(404);
+  });
+
+  test('handles error', async () => {
+    const response = await mockRequest.get('/bad');
+    console.log(response);
+    expect(response.status).toEqual(500);
+    // body.route data from 500.js
+    expect(response.body.route).toEqual('/bad');
+  });
+
 });
