@@ -12,7 +12,7 @@ Basic API server where middleware is written and practice deployment.
 
 - [GitHub Actions ci/cd](https://github.com/MelodicXP/server-deployment-practice/actions)
 - Dev [back-end server url](https://four01-server-deployment-practice-6k54.onrender.com)
-- Prod [back-end server url](enterUrlhere.xyz)
+- Prod [back-end server url](https://four01-server-development-practice-prod.onrender.com)
 
 ### Collaborators
 
